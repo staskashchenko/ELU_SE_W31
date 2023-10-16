@@ -1,8 +1,8 @@
 def calculate_total(cart):
     """Calculates the total price of items in the cart."""
     total = 0
-    for item in cart:
-        total += item['price']
+    for cart_item in cart:
+        total += cart_item['price']
     return total
 
 def display_total(total):
