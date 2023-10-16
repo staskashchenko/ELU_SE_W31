@@ -22,3 +22,6 @@ jobs:
         
     - name: Run Static Analysis
       run: pylint shopping_cart.py
+
+    - name: Run Tests
+      run: python -m unittest test_shopping_cart.py
