@@ -1,3 +1,8 @@
+"""
+This module provides functions to calculate and display the total price of items in a shopping cart.
+"""
+
+
 def calculate_total(cart):
     """Calculates the total price of items in the cart."""
     total = 0
@@ -5,9 +10,11 @@ def calculate_total(cart):
         total += cart_item['price']
     return total
 
+
 def display_total(total):
     """Displays the total price."""
     print(f"Total price: ${total:.2f}")
+
 
 CART_ITEMS = [
     {'name': 'Item A', 'price': 10.99},
